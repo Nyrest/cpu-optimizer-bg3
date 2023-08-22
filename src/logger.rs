@@ -8,6 +8,9 @@ pub fn report_debug(text: &str) {
     }
 }
 
+#[cfg(not(debug_assertions))]
+pub fn report_debug(text: &str) {}
+
 pub fn report_error(text: &str) {
     match msgbox::create("Cpu Optimizer Error", text, msgbox::IconType::Error) {
         Ok(_) => {}
