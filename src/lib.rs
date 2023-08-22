@@ -1,5 +1,3 @@
-#![feature(concat_bytes)]
-
 use std::slice;
 use std::str::FromStr;
 
