@@ -9,6 +9,7 @@ pub fn report_debug(text: &str) {
 }
 
 #[cfg(not(debug_assertions))]
+#[allow(unused_variables, dead_code)]
 pub fn report_debug(text: &str) {}
 
 pub fn report_error(text: &str) {
