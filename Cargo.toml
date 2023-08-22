@@ -5,4 +5,20 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+name = "CpuOptimizer"
+crate-type = ["cdylib", "rlib"]
+
 [dependencies]
+rust-ini = "0.19.0"
+msgbox = "0.7.0"
+num_cpus = "1.15.0"
+
+[dependencies.windows]
+version = "0.51.1"
+features = [
+    "Data_Xml_Dom",
+    "Win32_Foundation",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Threading",
+]
