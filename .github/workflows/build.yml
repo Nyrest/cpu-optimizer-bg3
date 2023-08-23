@@ -22,5 +22,5 @@ jobs:
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
-        path: 
-          ./output.zip
+        name: Build result
+        path: ./CpuOptimizer.zip
